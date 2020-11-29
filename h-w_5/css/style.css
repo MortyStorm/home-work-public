@@ -1,0 +1,355 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* back btn */
+.back-btn__pos-absolute {
+    position: absolute;
+    top: 5%;
+    right: 60%;
+}
+
+.back-btn__pos-absolute a {
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: capitalize;
+    border: 2px dashed black
+}
+
+body {
+    background: #F4F4F4;
+    border-radius: 40px;
+    height: 100vh;
+}
+
+.header-centered-logo-product_top-links {
+    background: #0C1014;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 640px;
+}
+
+.top-links__wrapper-content {
+    width: 560px;
+    height: 144px;
+    display: inherit;
+    flex-flow: inherit;
+    justify-content: inherit;
+    margin: 32px 40px 0 40px;
+   
+}
+
+.header-centered-logo-product_top-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    height: calc(144px - 48px);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+}
+
+.anchor-links_top-links {
+    width: 560px;
+    height: 48px;
+    background-color: #444444;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.anchor-links_top-links ul {
+    display: flex;
+    
+}
+
+.anchor-links_top-links ul li {
+    list-style: none;
+    padding: 16px 24px 16px 0;
+}
+
+.anchor-links_top-links ul li:first-child {
+    padding-left: 112px;
+}
+
+.anchor-links_top-links ul li:last-child {
+    padding-right: 113px;
+}
+
+.anchor-links_top-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Inter;
+    text-transform: capitalize;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+/* wrapper */
+
+.content__wrapper-content {
+    min-height: calc(100vh - 344px);
+    margin: 32px 40px 0 40px;
+}/* needded to show min-height except height to make it work */
+
+.hook-watch_content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 496px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+    background-image: url(../img/watch.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+
+}
+
+.hook-watch_content h1 {
+    width: 234px;
+    height: 88px;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 48px 0 0 72px;
+    font-weight: 700;
+    font-family: Inter;
+}
+
+.hook-watch_content p {
+    width: 248px;
+    height: 80px;
+    margin: 16px 0 0 72px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.hyper-link_content {
+    padding: 27px 0 0 72px;
+    color: #1890FF;
+    font-family: Inter;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.hyperlink-arrow_hook-watch {
+    width: 6.84px;
+    height: 12px;
+}
+
+.learn-more-form_content {
+    padding: 131px 0 0 72px;
+    
+}
+/* button */
+
+.btn-learn_content {
+    width: 260px;
+    height: 50px;
+	background-color:#188fff;
+	border-radius: 10px;
+	border:1px solid #188fff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+}
+
+.additional-goods_content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 556px;
+    height: 809px;
+    background: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+    margin-top: 34px;
+}
+
+.u-may-like_additional-goods h2 {
+    color: #0C1014;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.another-page_additional-goods a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1890FF;
+    text-decoration: none;
+}
+
+.u-may-like_additional-goods {
+    display: inherit;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.u-may-like_additional-goods h2 {
+    padding: 48px 0 0 70px;
+}
+
+.another-page_additional-goods {
+    padding: 56px 78px 0 0;
+}
+
+.additional-goods_content figure {
+    width: 50%;
+}
+
+.additional-goods_content figure form input {
+    background-color:#188fff;
+    border:1px solid #188fff;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    text-decoration:none;
+    width: 56px;
+    height: 24px;
+    text-transform: capitalize;
+    margin-top: 12px;
+}
+
+
+.airpods-figure_additional-goods  {
+    padding-left: 72.2px;
+}
+
+.iphone-figure_additional-goods {
+    padding-left: 75.28px;
+}
+
+.tv-figure_additionla-goods {
+    padding-left: 73px;
+
+}
+
+.apple-card-figure_additional-goods {
+    padding-left: 75px;
+}
+
+.product-name_additional-goods {
+    margin-top: 32px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.product-price_additional-goods {
+    margin-top: 4px;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+input {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 20px;
+    color: #fff;
+}
+
+/* footer */
+
+.follow-contact__wrapper-content {
+    height: 200px;
+    width: 560px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+    margin: 32px 0 40px 40px;
+    display: inherit;
+    justify-content: space-between;
+    font-family: Inter;
+}
+
+.bottom-links_follow-contact h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 32px 0 0 84px;
+}
+
+.bottom-links_follow-contact p {
+    font-size: 11px;
+    line-height: 20px;
+    width: 196px;
+    height: 60px;
+    margin: 8px 0 0 84px;
+    color: #515759;
+}
+
+.bottom-links_follow-contact div ul {
+    display: flex;
+    padding-left: 80.75px;
+}
+
+.bottom-links_follow-contact div ul li:first-child {
+    padding-right: 30.72px;
+    padding-top: 19px;
+}
+
+.bottom-links_follow-contact div ul li:nth-child(2n){
+    padding-top: 21.16px;
+    padding-right: 26.97px;
+}
+
+.bottom-links_follow-contact div ul li:last-child {
+    padding-top: 21px;
+}
+
+/* second footer part */
+
+.bottom-contacts_follow-contact h3 {
+    font-size: 18px;
+    line-height: 21.78px;
+    padding: 32px 141px 0 0;
+}
+
+.company-address_bottom-contacts {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: #515759;
+    width: 208px;
+    height: 40px;
+    padding-top: 8px;
+}
+
+.phone-number_bottom-contacts {
+    padding-top: 16px;
+}
+
+.phone-number_bottom-contacts a {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 20px;
+    color: #515759;
+    text-decoration: none;
+}
+
+.email_bottom-contacts {
+    padding-top: 8px;
+}
+
+.email_bottom-contacts a {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 20px;
+    color: #1890FF;
+}
