@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color: beige;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
+		min-height: 100vh;
+		position: relative;
+}
+
+
+.logo {
+    width: 75px;
+
+}
+
+/* header (menu) decoration */
+
+header {
+    height: auto;
+    width: 100%;
+    background-color: deepskyblue;
+    padding-top: 12px;
+}
+
+.dws-menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.dws-menu > ul > li {
+    margin: 12px;
+    list-style: none;
+}
+
+.dws-menu > ul > li > a {
+    text-decoration: none;
+    color: darkslategray;
+    text-transform: uppercase;
+}
+
+
+.dws-menu > ul > li > a:hover {
+    text-decoration: underline;/*  как задать делей на подчеркивание?*/
+    color: coral;
+     transition-delay: 0.15s; /*какая разница между єти делеем и тем что ниже?*/
+    /* -webkit-transition: 0.3s; почему выдает ошибку вс-код?*/
+}
+
+/* content decoration */
+
+.wrapper {
+    display: flex;
+	padding-bottom: 136px;
+}
+.main-part-1 {
+    padding: 3% 3% 0% 5%;
+    background-color: #fff;
+    flex-grow: 1;
+    border-right: 3px solid grey;
+}
+
+.part-2 {
+    flex-grow: 2;
+    font-size: 18px;
+    padding: 1% 4% 0% 2%;
+}
+
+.part-3 {
+    flex-grow: 1;
+}
+
+.quotation-block {
+    background-image: url(../img/Gerald_G_Parchment_Background_or_Border_small.svg);
+    padding: 35px;
+}
+
+/* footer (menu) decoration */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: hotpink;
+		left: 0;
+		right: 0;
+    height: auto;
+
+}
+
+.dws-menu-downSide{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.dws-menu-downSide > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.dws-menu-downSide > ul li {
+    margin: 12px;
+    list-style: none;
+}
+
+.dws-menu-downSide > ul li a {
+    text-decoration: none;
+    color: navy;
+    text-transform: uppercase;
+    
+}
+
+.dws-menu-downSide > ul li a:hover {
+    color: olive;
+    text-decoration: underline;
+    transition-delay: 0.15s;
+}
+
+/* address in footer section decoration */
+
+address {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: lawngreen;
+}
+
+.devider { 
+    color: #fff;
+    font-weight: 700;
+}
+
+address > p a {
+    text-decoration: none;
+    color: #000;
+}
+
+address > p a:hover {
+    color: mediumorchid;
+}
+
+
+
+ /* undo */
+
+ .go-previous-page_wrapper {
+    margin: 0 50px 0 25px;
+    border: 2px dashed black;
+    height: 50px;
+    width: 73px;
+ }
+
+ .go-previous-page_wrapper a {
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: capitalize;
+ }

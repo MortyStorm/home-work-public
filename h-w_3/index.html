@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="go-previous-page_wrapper"><a href="../../index.html">back</a></div>
+    <Form class="forms">
+        <input type="name" placeholder="enter your name" autocomplete="on" required autofocus class="required">
+        <span class="required"></span>
+        <input type="password" placeholder="Enter your password" autocomplete="on" required minlength="5" maxlength="25">
+        <span class="required"></span>
+        <input type="email" name="email" placeholder="somebody@gmail.com">
+        <input type="email" name="email" placeholder="second email" disabled>
+        <input type="date" name="date">
+        <input type="tel" name="tel" placeholder="+380-xx-xxx-xx-xx" pattern="+380-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+        <label>
+            <input type="radio" name="size" value="small">S
+            <input type="radio" name="size" value="medium" checked>M
+            <input type="radio" name="size" value="large">L
+            <input type="radio" name="size" value="x-large"">XL
+        </label>
+        <h3>additional options</h3>
+        <label class="column">
+           <label><input type="checkbox" name="option" value="shipping">Shipping</label> 
+           <label><input type="checkbox" name="option" value="pay by card">Pay by Credit Card</label>
+            <label><input type="checkbox" name="option" value="call me back">Call me back</label>
+        </label>
+        <h3>choose a color</h3>
+        <select name="" id="">
+            <option value="1">red</option>
+            <option value="2">blue</option>
+            <option value="3">white</option>
+            <option value="4">black</option>
+        </select>
+
+        <button class="submit-button">
+            <input type="submit">
+        </button>
+    </Form>
+</div>
+
+</body>
+</html>
