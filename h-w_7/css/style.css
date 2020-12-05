@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper__weather-info {
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.wrapper {
+    width: 40%;
+    height: 50vh;
+    margin: 50px 0 0 350px;
+    border: 5px solid #2B81AC;
+    background: #3399CC;
+    padding: 40px 0 0 45px;
+    font-size: 16px;
+}
+
+.wrapper__weather {
+    width: 674px;
+    height: 350px;
+    line-height: 2;
+}
+
+.weather__list-n-value {
+    list-style: none;
+    display: block;
+}
+
+li {
+    display: inline-block;
+    height: 70px;
+    vertical-align: top;
+    margin: 0px -4px 0 0;
+    text-align: center;
+    color: #fff;
+}
+
+li:hover {
+    transition: all .1 ease-in-out;
+    box-shadow: 5px 5px 5px -5px rgba(6, 6, 6, 0.6) inset;
+    opacity: .7;
+}
+
+ul {
+    border: 3px solid #fff;
+}
+
+
+li p:first-child  {
+    text-transform: capitalize;
+}
+
+
+.wi {
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.wi-celsius {
+    font-size: 20px;
+    opacity: 1;
+}
+
+.weather__list-item_blue-bgc {
+    background: #3399CC;
+    width: 50%;
+    border-right: 3px solid #fff;
+}
+
+.weather__list-item_green-bgc {
+    background: #33CCCC;
+    width: 25%;
+    border-right: 3px solid #fff;
+}
+
+.weather__list-item_pink-bgc {
+    background: #996699;
+    width: 25%;
+}
+
+.weather__list-item_red-bgc {
+    background: #C24747;
+    width: 25%;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_orange-bgc {
+    background: #E2674A;
+    width: 25%;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_yellow-bgc {
+    background: #FFCC66;
+    width: 25%;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_beige-bgc {
+    background: #99CC99;
+    width: 25%;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_grey-bgc {
+    background: #669999;
+    width: 25%;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_light-pink-bgc {
+    background: #CC6699;
+    width: 50%;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_dark-green-bgc {
+    background: #339966;
+    width: 25%;
+    border-top: 3px solid #fff;
+}
+
+.weather__list-item_grey-blue-bgc {
+    background: #666699;
+    width: 100%;
+    border-top: 3px solid #fff;
+}
+
+.wrapper__bottom {
+    color: #fff;
+}
