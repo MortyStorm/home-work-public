@@ -10,13 +10,18 @@
 }
 
 .wrapper {
-    width: 40%;
-    height: 50vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper__visible-elem {
     margin: 50px 0 0 350px;
     border: 5px solid #2B81AC;
     background: #3399CC;
     padding: 40px 0 0 45px;
     font-size: 16px;
+    width: 40.5%;
+    position: fixed;
 }
 
 .wrapper__weather {
@@ -49,11 +54,9 @@ ul {
     border: 3px solid #fff;
 }
 
-
-li p:first-child  {
+li span:first-child  {
     text-transform: capitalize;
 }
-
 
 .wi {
     font-size: 18px;
@@ -151,3 +154,108 @@ li p:first-child  {
     text-decoration: none;
     font-size: 23px;
 }
+
+/* popups */
+
+.weather__modal-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .8s ease 0s;
+}
+
+
+/* как закрывать модальное окно по клику на пространство??
+
+.popup__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+ {
+    visibility: visible;
+} */
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__content {
+    background-color: #FFF;
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+    font-size: 20px;
+    margin: 0.1em;
+    position: relative;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    transition: all .8s ease 0s;
+    opacity: 0;
+    border-radius: 3%;
+}
+
+.popup__close {
+    position: absolute;
+    font-size: 30px;
+    right: 20px;
+    top: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup__title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+
+.popup__text {
+    width: 500px;
+}
+
+.popup__text li{
+    color: #000;    
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: none;
+    box-shadow: none;
+}
+
+.popup__text i {
+    color: #000;
+    padding-left: 8px;
+    font-size: 25px;
+}
+
+
+/* как затемнить блок с погодой когда всплывает модальное окно?? */
+
+/* как закрывать модальное окно по клику на пространство?? */

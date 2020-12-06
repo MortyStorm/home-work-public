@@ -8,64 +8,254 @@
     <link rel="stylesheet" href="css/weather-icons.min.css">
 </head>
 <body>
-    <div class="Back_button"> <a href="../index.html">Back</a></div>
+    <div class="Back_button" #top-right__button> <a href="../index.html">Back</a></div>
     <div class="wrapper">
-        <header class="wrapper__weather-info">
-            <p class="weather-info__weather-forecast"> CSS Weather Forecast <i class="wi wi-sunset"></i></p>
-        </header>
-        <section class="wrapper__weather">
-            <ul class="weather__list-n-value">
-                <li class="weather__list-item_blue-bgc">
-                    <p>lisbon</p>
-                    <p>21 <i class="wi wi-celsius"></i> <i class="wi wi-day-sunny"></i> </p>
-                </li>
-                <li class="weather__list-item_green-bgc">
-                    <p>paris</p>
-                    <p>11 <i class="wi wi-celsius"></i> <i class="wi wi-day-hail"></i></p>
-                </li>
-                <li class="weather__list-item_pink-bgc">
-                    <p>belgrad</p>
-                    <p>15 <i class="wi wi-celsius"></i></i> <i class="wi wi-day-cloudy"></i></p>
-                </li>
-                <li class="weather__list-item_red-bgc">
-                    <p>moscow</p>
-                    <p>21 <i class="wi wi-celsius"></i> <i class="wi wi-day-cloudy-high"></i></p>
-                </li>
-                <li class="weather__list-item_orange-bgc">
-                    <p>tel aviv</p>
-                    <p>32 <i class="wi wi-celsius"></i> <i class="wi wi-hot"></i></p>
-                </li>
-                <li class="weather__list-item_yellow-bgc">
-                    <p>cair</p>
-                    <p>21 <i class="wi wi-celsius"></i> <i class="wi wi-day-sunny"></i></p>
-                </li>
-                <li class="weather__list-item_beige-bgc">
-                    <p>new york</p>
-                    <p>17 <i class="wi wi-celsius"></i> <i class="wi wi-day-storm-showers"></i> </p>
-                </li>
-                <li class="weather__list-item_grey-bgc">
-                    <p>new dehli</p>
-                    <p>17 <i class="wi wi-celsius"></i> <i class="wi wi-day-rain-wind"></i> </p>
-                </li>
-                <li class="weather__list-item_light-pink-bgc">
-                    <p>san francisco</p>
-                    <p>15 <i class="wi wi-celsius"></i> <i class="wi wi-day-sunny-overcast"></i> </p>
-                </li>
-                <li class="weather__list-item_dark-green-bgc">
-                    <p>tokyo</p>
-                    <p>8 <i class="wi wi-celsius"></i> <i class="wi wi-night-clear"></i> </p>
-                </li>
-                <li class="weather__list-item_grey-blue-bgc">
-                    <p>sydney</p>
-                    <p>25 <i class="wi wi-celsius"></i> <i class="wi wi-night-partly-cloudy"></i> </p>
-                </li>
-            </ul>
-        </section>
-        <footer class="wrapper__bottom">
-            <p class="bottom__info">
-                Have a nice day and don't forget an umbrella if you are in New Dehli now!
-            </p>
-        </footer>
+        <div class="wrapper__visible-elem">
+            <header class="wrapper__weather-info">
+                <p class="weather-info__weather-forecast"> CSS Weather Forecast <i class="wi wi-sunset"></i></p>
+            </header>
+            <section class="wrapper__weather" >
+                <ul class="weather__list-n-value">
+                   <li class="weather__list-item_blue-bgc">
+                    <a href="#lisbon" class="weather__modal-link">
+                        <span>lisbon</span> <br>
+                        <span>21 <i class="wi wi-celsius"></i> <i class="wi wi-day-sunny"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_green-bgc">
+                        <a href="#paris" class="weather__modal-link">
+                        <span>paris</span> <br>
+                        <span>11 <i class="wi wi-celsius"></i> <i class="wi wi-day-hail"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_pink-bgc">
+                        <a href="#belgrad" class="weather__modal-link">
+                    <span>belgrad</span> <br>
+                    <span>15 <i class="wi wi-celsius"></i></i> <i class="wi wi-day-cloudy"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_red-bgc">
+                        <a href="#moscow" class="weather__modal-link">
+                    <span>moscow</span> <br>
+                    <span>21 <i class="wi wi-celsius"></i> <i class="wi wi-day-cloudy-high"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_orange-bgc">
+                        <a href="#tel aviv" class="weather__modal-link">
+                    <span>tel aviv</span> <br>
+                    <span>32 <i class="wi wi-celsius"></i> <i class="wi wi-hot"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_yellow-bgc">
+                        <a href="#cair" class="weather__modal-link">
+                    <span>cair</span> <br>
+                    <span>21 <i class="wi wi-celsius"></i> <i class="wi wi-day-sunny"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_beige-bgc">
+                        <a href="#new york" class="weather__modal-link">
+                    <span>new york</span> <br>
+                    <span>17 <i class="wi wi-celsius"></i> <i class="wi wi-day-storm-showers"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_grey-bgc">
+                        <a href="#new dehli" class="weather__modal-link">
+                    <span>new dehli</span> <br>
+                    <span>17 <i class="wi wi-celsius"></i> <i class="wi wi-day-rain-wind"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_light-pink-bgc">
+                        <a href="#san francisco" class="weather__modal-link">
+                    <span>san francisco</span> <br>
+                    <span>15 <i class="wi wi-celsius"></i> <i class="wi wi-day-sunny-overcast"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_dark-green-bgc">
+                        <a href="#tokyo" class="weather__modal-link">
+                    <span>tokyo</span> <br>
+                    <span>8 <i class="wi wi-celsius"></i> <i class="wi wi-night-clear"></i></span></a>
+                    </li>
+                    <li class="weather__list-item_grey-blue-bgc">
+                        <a href="#sydney" class="weather__modal-link">
+                    <span>sydney</span> <br>
+                    <span>25 <i class="wi wi-celsius"></i> <i class="wi wi-night-partly-cloudy"></i></span></a>
+                    </li>
+                </ul>
+            </section>
+            <footer class="wrapper__bottom">
+                <p class="bottom__info">
+                    Have a nice day and don't forget an umbrella if you are in New Dehli now!
+                </p>
+            </footer>
+        </div>
+    </div>
+    <!-- popups -->
+    <div class="popup" id="lisbon">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise at 6:01 am <i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset at 21:38 pm <i class="wi wi-sunset"></i></li>
+                        <li> Wind speed low <i class="wi wi-wind-beaufort-1"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="paris">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 7:12 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 19:29 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed light-medium<i class="wi wi-wind-beaufort-3"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="belgrad">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:48 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 19:54 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed medium <i class="wi wi-wind-beaufort-4"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="moscow">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 5:24 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 21:15 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed low<i class="wi wi-wind-beaufort-1"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="tel aviv">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 5:05 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 18:23 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed none<i class="wi wi-wind-beaufort-0"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="cair">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:23 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 18:07 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed none<i class="wi wi-wind-beaufort-0"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="new york">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:42 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 19:15 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed medium<i class="wi wi-wind-beaufort-3"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="new dehli">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:42 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 19:15 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed medium-strong<i class="wi wi-wind-beaufort-5"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="san francisco">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:35 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 19:32 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed low<i class="wi wi-wind-beaufort-2"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="tokyo">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:55 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 18:12 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed low<i class="wi wi-wind-beaufort-1"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="sydney">
+        <!-- <a href="#" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title"> Additional info</div>
+                <div class="popup__text">
+                    <ul>
+                        <li> Sunrise 6:14 am<i class="wi wi-sunrise"></i> </li>
+                        <li> Sunset 18:15 pm<I class="wi wi-sunset"></I></li>
+                        <li> Wind speed medium-low<i class="wi wi-wind-beaufort-3"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
