@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg-chess {
+    max-width: 1000px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100vh;
+    background: #964B00;
+    background: linear-gradient(to bottom, #964B00 0%, #873C00 100%);
+    border: 1px solid #782D00;
+    text-shadow: 0 1px 0 #A55A0F;
+    box-shadow: inset 0 1px 0 #A55A0F;
+    margin: 0 auto;
+}
+
+.chess-board {
+    background: #808080;
+    background: linear-gradient(to bottom, #808080 0%, #717171 100%);
+    border: 1px solid #626262;
+    text-shadow: 0 1px 0 #8F8F8F;
+    box-shadow: inset 0 1px 0 #8F8F8F;
+    max-height: 823px;
+    height: 100vh;
+    max-width: 843px;
+    width: 100%;
+    margin: 55px auto;
+}
+
+.chess-letters {
+    height: 25px;
+}
+
+.flex-letters {
+    max-width: 100%;
+    max-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.chess-num {
+    width: 25px;
+    max-height: 100vh;
+    height: 800px;
+    float: left;
+    border-right: 2px solid black;
+    margin-left: 15px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.flex-num {
+    max-width: 100%;
+    max-height: 100vh;
+    display: inline-block;
+    margin-top: -30px;
+}
+
+.flex-num div {
+    padding-top: 75px;
+}
+
+.flex-num-x2 {
+    min-width: 100%;
+    display: inline-block; 
+}
+
+.flex-num-x2 div {
+    padding-top: 75px;
+    margin-top: 10px;
+}
+
+.x-white {
+    background: rgb(234,236,240);
+    background: linear-gradient(90deg, rgba(234,236,240,1) 0%, rgba(141,145,148,1) 21%, rgba(175,197,240,1) 100%);
+
+}
+
+.x-black {
+    background: rgb(0,168,107);
+    background: radial-gradient(circle, rgba(0,168,107,1) 0%, rgba(96,124,142,1) 35%, rgba(71,74,81,1) 100%);
+}
+
+.board-container {
+    display: flex; 
+    flex-flow: row wrap;
+    position: relative;
+}
+.first-row {
+    display: inherit;
+}
+
+.second-row {
+    display: inherit;
+}
+
+.third-row  {
+    display: inherit;
+}
+
+.fourth-row  {
+    display: inherit;
+}
+
+.fifth-row  {
+    display: inherit;
+}
+
+.sixth-row  {
+    display: inherit;
+}
+
+.seventh-row  {
+    display: inherit;
+}
+
+.eighth-row  {
+    display: inherit;
+}
+
+.sq_chess-board {
+width: 100px;
+height: 100px;
+}
+
+.hack::before {
+    content: "";
+    display: block; 
+    padding-top: 100%;
+}
+
+/* правильно ли применен паддинг-хак? */
+
+.chess_front-r {
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+
+img {
+    width: 50px;
+}
+
+.chess_front-x2 {
+    position: absolute;
+    top: 196px;
+    left: 700px; 
+}
+
+.chess_front-x3 {
+    position: absolute;
+    top: 196px;
+    left: 800px;
+}
+
+.chess_front-x4 {
+    position: absolute;
+    top: 196px;
+    left: 920px; 
+}
+
+.chess_front-x5 {
+    position: absolute;
+    top: 196px;
+    left: 1000px; 
+}
+
+.chess_front-x6 {
+    position: absolute;
+    top: 196px;
+    left: 1100px; 
+}
+
+.chess_front-x7 {
+    position: absolute;
+    top: 196px;
+    left: 1200px; 
+}
+
+.chess_front-x8 {
+    position: absolute;
+    top: 196px;
+    left: 1300px; 
+}
+
+.opposite-row-front {
+    position: absolute;
+    bottom: 196px;
+    left: 600px;
+}
+
+.opposite-row-front-x2 {
+    position: absolute;
+    bottom: 196px;
+    left: 700px;
+}
+
+.opposite-row-front-x3 {
+    position: absolute;
+    bottom: 196px;
+    left: 800px;
+}
+
+.opposite-row-front-x4 {
+    position: absolute;
+    bottom: 196px;
+    left: 920px;
+}
+
+.opposite-row-front-x5 {
+    position: absolute;
+    bottom: 196px;
+    left: 1000px; 
+}
+
+.opposite-row-front-x6 {
+    position: absolute;
+    bottom: 196px;
+    left: 1100px; 
+}
+
+.opposite-row-front-x7 {
+    position: absolute;
+    bottom: 196px;
+    left: 1200px;
+}
+
+.opposite-row-front-x8 {
+    position: absolute;
+    bottom: 196px;
+    left: 1300px; 
+}
+
+
+
+/* back row */
+
+.chess_back-r {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+.chess_back-r-x2 {
+    position: absolute;
+    top: 50px;
+    left: 700px;
+}
+
+.chess_back-r-x3 {
+    position: absolute;
+    top: 50px;
+    left: 800px;
+}
+
+.chess_back-r-x4 {
+    position: absolute;
+    top: 50px;
+    left: 920px;
+}
+
+.chess_back-r-x5 {
+    position: absolute;
+    top: 50px;
+    left: 1000px; 
+}
+
+.chess_back-r-x6 {
+    position: absolute;
+    top: 50px;
+    left: 1100px;
+}
+
+.chess_back-r-x7 {
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+}
+
+.chess_back-r-x8 {
+    position: absolute;
+    top: 50px;
+    left: 1300px;
+}
+
+/* back opposite row */
+
+.chess_back-op-r {
+    position: absolute;
+    bottom: 96px;
+    left: 600px;
+}
+
+.chess_back-op-r-x2 {
+    position: absolute;
+    bottom: 96px;
+    left: 700px;
+}
+
+.chess_back-op-r-x3 {
+    position: absolute;
+    bottom: 96px;
+    left: 800px;
+}
+
+.chess_back-op-r-x4 {
+    position: absolute;
+    bottom: 96px;
+    left: 920px;
+}
+
+.chess_back-op-r-x5 {
+    position: absolute;
+    bottom: 96px;
+    left: 1000px;
+}
+
+.chess_back-op-r-x6 {
+    position: absolute;
+    bottom: 96px;
+    left: 1100px;
+}
+
+.chess_back-op-r-x7 {
+    position: absolute;
+    bottom: 96px;
+    left: 1200px;
+}
+
+.chess_back-op-r-x8 {
+    position: absolute;
+    bottom: 96px;
+    left: 1300px;
+}
+
+
+/* numbers justify */

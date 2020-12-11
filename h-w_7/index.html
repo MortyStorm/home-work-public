@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/weather-icons.min.css">
 </head>
-<body>
+<body class="lock">
     <div class="Back_button" #top-right__button> <a href="../index.html">Back</a></div>
     <div class="wrapper">
         <div class="wrapper__visible-elem">
-            <header class="wrapper__weather-info">
+            <header class="wrapper__weather-info lock-padding">
                 <p class="weather-info__weather-forecast"> CSS Weather Forecast <i class="wi wi-sunset"></i></p>
             </header>
             <section class="wrapper__weather" >
@@ -81,11 +81,11 @@
         </div>
     </div>
     <!-- popups -->
-    <div class="popup" id="lisbon">
+    <div class="popup open popup-link" id="lisbon">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
-                <a href="#" class="popup__close">X</a>
+                <a href="#" class="popup__close close-popup">X</a>
                 <div class="popup__title"> Additional info</div>
                 <div class="popup__text">
                     <ul>
@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="paris">
+    <div class="popup open popup-links" id="paris">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="belgrad">
+    <div class="popup open popup-links" id="belgrad">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -129,7 +129,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="moscow">
+    <div class="popup open popup-links" id="moscow">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -145,7 +145,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="tel aviv">
+    <div class="popup open popup-links" id="tel aviv">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -161,7 +161,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="cair">
+    <div class="popup open popup-links" id="cair">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -177,7 +177,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="new york">
+    <div class="popup open popup-links" id="new york">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -193,7 +193,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="new dehli">
+    <div class="popup open popup-links" id="new dehli">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -209,7 +209,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="san francisco">
+    <div class="popup open popup-links" id="san francisco">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -225,7 +225,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="tokyo">
+    <div class="popup open popup-links" id="tokyo">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -241,7 +241,7 @@
             </div>
         </div>
     </div>
-    <div class="popup" id="sydney">
+    <div class="popup open popup-links" id="sydney">
         <!-- <a href="#" class="popup__area"></a> -->
         <div class="popup__body">
             <div class="popup__content">
@@ -257,5 +257,6 @@
             </div>
         </div>
     </div>
+    <script src="java_script/script.js"></script>  
 </body>
 </html>

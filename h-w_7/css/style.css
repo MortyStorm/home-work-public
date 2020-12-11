@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body.lock {
+    overflow: hidden;
+}
 
 .wrapper__weather-info {
     padding-bottom: 15px;
@@ -189,14 +192,9 @@ li span:first-child  {
     visibility: visible;
 } */
 
-.popup:target {
+.popup.open {
     opacity: 1;
     visibility: visible;
-}
-
-.popup:target .popup__content {
-    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
-    opacity: 1;
 }
 
 .popup__body {
@@ -218,6 +216,11 @@ li span:first-child  {
     transition: all .8s ease 0s;
     opacity: 0;
     border-radius: 3%;
+}
+
+.popup.open .popup__content {
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
 }
 
 .popup__close {
